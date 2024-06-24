@@ -2,7 +2,7 @@ package lexer
 
 import (
 	"lexer/grammar"
-	"lexer/tokens"
+	"github.com/jlucero805/gorest/tokens"
 	"unicode"
 )
 
