@@ -1,0 +1,28 @@
+<field> --> <ident> : <string>
+<body field> --> Body : <json>
+<json> -->
+    <number>
+    | <bool>
+    | <string>
+    | <object>
+
+<object> --> ({ (<object field>,)* <object field> }) | { }
+<object field> --> <string> : <object value>
+<object value> -->
+    <string>
+    | <number>
+    | <bool>
+    | <object>
+<number> --> <digit>+
+<bool> --> true | false
+<string> --> " <string character>* "
+<string character> --> \" | // | <any char other than " or \>
+
+<ident> --> <initial> <subsequent>*
+<initial> --> <alpha>
+<subsequent> --> <alpha> | <digit>
+<alpha> --> <uppercase> | <lowercase>
+<uppercase> --> A | B | ... | Z
+<lowercase> --> a | b | ... | z
+<digit> --> 0 | 1 | ... | 9
+
