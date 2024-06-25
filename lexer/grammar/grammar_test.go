@@ -1,8 +1,8 @@
 package grammar_test
 
 import (
-	"lexer/grammar"
 	"testing"
+	"github.com/jlucero805/gorest/lexer/grammar"
 )
 
 func TestDigit(t *testing.T) {

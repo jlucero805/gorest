@@ -1,10 +1,10 @@
 package lexer_test
 
 import (
-	lexer "lexer"
-	"lexer/tokens"
 	"reflect"
 	"testing"
+	"github.com/jlucero805/gorest/lexer"
+	"github.com/jlucero805/gorest/lexer/tokens"
 )
 
 func TestLex(t *testing.T) {

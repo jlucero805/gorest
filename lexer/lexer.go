@@ -1,9 +1,10 @@
 package lexer
 
 import (
-	"lexer/grammar"
-	"github.com/jlucero805/gorest/tokens"
 	"unicode"
+
+	"github.com/jlucero805/gorest/lexer/grammar"
+	"github.com/jlucero805/gorest/lexer/tokens"
 )
 
 type Lexer struct {
